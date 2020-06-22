@@ -22,6 +22,7 @@ function App() {
           <CSSTransition classNames="fade" timeout={300}>
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/tictactoe" component={Home} />
               <Route path="/user" exact component={User} />
               <Route path="/select" exact component={Select} />
               <Route path="/game" exact component={Game} />
