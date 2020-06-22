@@ -1,0 +1,21 @@
+.player1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1.invisible {
+  display: none;
+}
+
+.player2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player2.invisible {
+  display: none;
+}

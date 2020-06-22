@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Balsamiq Sans";
+  background-color: #f7f7f7;
+}
+
+/* --> Background On Screen Size Start <-- */
+/* ----------- Desktop Screens ----------- */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    background-image: url("../assets/bg/web-1.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ----------- Tablets Screens ----------- */
+
+/* Tablets Portrait */
+@media only screen and (min-device-width: 570px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    background-image: url("../assets/bg/tab-1.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ----------- Mobile Screens ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background-image: url("../assets/bg/mobile-1.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  body {
+    background-image: url("../assets/bg/mobile-1.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* --> Background Screen Ends <-- */
+
+/* --> Animation <-- */
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave.fade-leave-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mode-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NA {
+  display: flex;
+  min-height: 2rem;
+}
+
+.info_text {
+  color: orange;
+  font-size: 16px;
+}
+
+.txt-Btn {
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 20px;
+  font-family: "Balsamiq Sans";
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  background-color: #2864e9;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.txt-Btn.disabled {
+  opacity: 0.5;
+}
+
+.user-input {
+  width: fit-content;
+  width: 14rem;
+  padding: 1rem;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: "Balsamiq Sans";
+  border-radius: 20px;
+  margin: 1rem 0;
+}
